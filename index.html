@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coffee</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<script>
+    let profilepic=document.getElementById("profile-pic");
+    let inputFile=document.getElementById("input-file");
+    inputFile.onchange=function(){
+        profilepic.src=URL.createObjectURL(inputFile.files[0])
+    }
+</script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function bookmail(){
+       alert("Your Table has been Booked for name  "+document.getElementById("nameop").value+" Thank you!!")
+       //alert("heelooooo")
+    }
+    function sendemail(){
+        Email.send({
+            Host : "smtp.gmail.com",
+            Username : "shinde1rushikesh@gmail.com",
+            Password : "****",
+            To : 'shinde1rushikesh@gmail.com',
+            From : document.getElementById(email).value,
+            Subject : "NEW",
+            Body : "And this is the body"
+        }).then(
+        message => alert("booked successfully")
+        );
+    }
+</script>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-fa2bd542-f906-4fc2-bb02-48f8fe589230"></div>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"> coffee <i class="fas fa-mug-hot"></i> </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#menu">menu</a>
+        <a href="#review">review</a>
+        <a href="#book">book</a>
+    </nav>
+
+    <a href="#book" class="btn">book a table</a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content">
+            <h3>fresh coffee in the morning</h3>
+            <a href="#book" class="btn">buy one now</a>
+        </div>
+
+        <div class="image">
+            <img src="image/home-img-1.png" class="main-home-image" alt="">
+        </div>
+
+    </div>
+
+    <div class="image-slider">
+        <img src="image/home-img-1.png" alt="">
+        <img src="image/home-img-2.png" alt="">
+        <img src="image/home-img-3.png" alt="">
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> about us <span>why choose us</span> </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="image/about-img.png" alt="">
+        </div>
+
+        <div class="content">
+            <h3 class="title">what's make our coffee special!</h3>
+            <p> >Quality beans: Using high-quality beans that have been grown and processed properly can make a significant difference in the taste and aroma of coffee!
+                >Roasting: The way the beans are roasted can greatly affect the flavor of the coffee. Different roasting levels can bring out different flavors and aromas.
+                >Brewing method: There are many ways to brew coffee, including drip coffee, French press, espresso, and more. Each method has its own unique characteristics that can affect the taste of the coffee.
+                >Water quality: The quality of the water used to brew coffee can affect the taste and aroma. Ideally, the water should be filtered and free of impurities. 
+                >Barista skills: The skills of the barista can make a big difference in the quality of the coffee. A skilled barista knows how to properly grind, measure, and brew coffee to achieve the desired flavor and aroma.</p>
+      
+            <div class="icons-container">
+                <div class="icons">
+                    <img src="image/about-icon-1.png" alt="">
+                    <h3>quality coffee</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-2.png" alt="">
+                    <h3>our branches</h3>
+                </div>
+                <div class="icons">
+                    <img src="image/about-icon-3.png" alt="">
+                    <h3>free delivery</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+    <h1 class="heading"> our menu <span>popular menu</span> </h1>
+
+    <div class="box-container">
+
+        <a href="#" class="box">
+            <img src="image/menu-1.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Espresso</p>
+                <span>Rs.100</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-2.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Red Eye</p>
+                <span>Rs.500</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-3.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Black Eye</p>
+                <span>Rs.500</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-4.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Macchiato</p>
+                <span>Rs.359</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-5.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Americano</p>
+                <span>Rs.550</span>
+            </div>
+        </a>
+
+        <a href="#" class="box">
+            <img src="image/menu-6.png" alt="">
+            <div class="content">
+                <h3>our special coffee</h3>
+                <p>Cortado</p>
+                <span>Rs.300</span>
+            </div>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> reviews <span>what people says</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-1.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Very Nice, i'm definatly coming back again.suiiiiiii</p>
+                <h3>Christiano Ronaldo</h3>
+                <span>happy customer</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-2.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Very satisfied flavours,you making customers happy! i'm dedicating my next 100 to you!!</p>
+                <h3>Virat Kolhi</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-3.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Nice </p>
+                <h3>Odd Onion</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-4.png" alt="">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>great!! i loved it.</p>
+                <h3>Pm Modi</h3>
+                <span>satisfied client</span>
+            </div>
+
+            <div class="swiper-slide box">
+                <i class="fas fa-quote-left"></i>
+                <i class="fas fa-quote-right"></i>
+                <img src="image/pic-5.png" alt="" id="profile-pic">
+                <label for="input-file"></label>
+                
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p><textarea onpointerleave="alert('thanks for review!')" name="text" placeholder="leave a note here" id="" cols="20" rows="1"></textarea></p>
+                <h3><span>leave a note</span></h3>
+                <span>satisfied client</span>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="book">
+
+    <h1 class="heading"> booking <span>reserve a table</span> </h1>
+
+    <form action="" id="orderform">
+         
+        <input type="text" placeholder="your name" class="box" id="nameop">
+        <input type="email" id="email" placeholder="your email" class="box">
+        <input type="number" id="numb" placeholder="your number" class="box">
+
+        <textarea name=""  id="messagebook" placeholder="your message" class="box" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" onclick="bookmail()" value="send message" class="btn">
+
+    </form>
+
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+
+
+<!-- book section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our branches</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> india </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> USA </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> france </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> africa </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Japan </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> about </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> menu </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> book </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fas fa-phone"></i> +91 95613 40344 </a>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fas fa-phone"></i> +91 00000 00000 </a>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fas fa-envelope"></i> shinde1rushikesh@gmail.com </a>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fas fa-envelope"></i> pune,46 </a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fab fa-facebook-f"></i> facebook </a>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="https://www.instagram.com/oddonionfound/"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="https://www.youtube.com/channel/UCreAj41Ojwj9bDEtos-ahzA"> <i class="fab fa-linkedin"></i> linkedin </a>
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> Rushikesh Shinde</span> | @all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
